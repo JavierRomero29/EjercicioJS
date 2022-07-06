@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        var distancia = prompt("¿Que distancia necesita recorrer? ");
+        var transporte = '';
+
+        if (Number(distancia) <= 1000) {
+            transporte = 'pie';
+        } else if (Number(distancia) <= 10000) {
+            transporte = 'bicicleta';
+        } else if (Number(distancia) <= 100000) {
+            transporte = 'colectivo';
+        } else if (Number(distancia) <= 300000) {
+            transporte = 'auto';
+        } else if (Number(distancia) <= 1000000) {
+            transporte = 'avion';
+        }
+        else {
+            alert("Ingrese una distancia correctamente");
+
+        }
+
+        console.log('Para ' + distancia + ' distancia recomendamos ir en ' + transporte);   
+    </script>
+
+
+
+
+</body>
+
+</html>
